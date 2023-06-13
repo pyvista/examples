@@ -13,7 +13,7 @@ import numpy as np
 import pyvista
 from pyvista import examples
 
-from examples.downloads import _download_and_read
+from pyvista.examples.downloads import _download_and_read
 
 
 def _sphere_with_texture_map(radius=1.0, lat_resolution=50, lon_resolution=100):
