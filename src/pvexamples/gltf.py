@@ -31,7 +31,7 @@ def download_damaged_helmet():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_damaged_helmet()
     >>> cubemap = examples.download_sky_box_cube_map()
     >>> pl = pyvista.Plotter()
@@ -56,7 +56,7 @@ def download_sheen_chair():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_sheen_chair()
     >>> cubemap = examples.download_sky_box_cube_map()
     >>> pl = pyvista.Plotter()  # doctest:+SKIP
@@ -81,7 +81,7 @@ def download_gearbox():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_gearbox()
     >>> pl = pyvista.Plotter()
     >>> pl.import_gltf(gltf_file)
@@ -104,7 +104,7 @@ def download_avocado():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_avocado()
     >>> pl = pyvista.Plotter()
     >>> pl.import_gltf(gltf_file)
@@ -127,7 +127,7 @@ def download_milk_truck():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_milk_truck()
     >>> pl = pyvista.Plotter()
     >>> pl.import_gltf(gltf_file)

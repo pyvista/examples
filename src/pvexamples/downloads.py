@@ -10,7 +10,7 @@ rendered on this page.
 
 Examples
 --------
->>> from pyvista import examples
+>>> import pvexamples as examples
 >>> mesh = examples.download_saddle_surface()
 >>> mesh.plot()
 
@@ -160,7 +160,7 @@ def download_file(filename):
     --------
     Download the ``'puppy.jpg'`` image.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> path = examples.download_file('puppy.jpg')  # doctest:+SKIP
     >>> path  # doctest:+SKIP
     '/home/user/.cache/pyvista_3/puppy.jpg'
@@ -215,7 +215,7 @@ def delete_downloads():
     --------
     Delete all local downloads.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> examples.delete_downloads()  # doctest:+SKIP
 
     """
@@ -278,7 +278,7 @@ def download_masonry_texture(load=True):  # pragma: no cover
     Create plot the masonry testure on a surface.
 
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.download_masonry_texture()
     >>> surf = pyvista.Cylinder()
     >>> surf.plot(texture=texture)
@@ -307,7 +307,7 @@ def download_usa_texture(load=True):  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_usa_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -331,7 +331,7 @@ def download_puppy_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_puppy_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -358,7 +358,7 @@ def download_puppy(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_puppy()
     >>> dataset.plot(cpos='xy', rgba=True)
 
@@ -382,7 +382,7 @@ def download_usa(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_usa()
     >>> dataset.plot(style="wireframe", cpos="xy")
 
@@ -406,7 +406,7 @@ def download_st_helens(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_st_helens()
     >>> dataset.plot(cmap="gist_earth")
 
@@ -444,7 +444,7 @@ def download_bunny(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_bunny()
     >>> dataset.plot(cpos="xy")
 
@@ -481,7 +481,7 @@ def download_bunny_coarse(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_bunny_coarse()
     >>> dataset.plot(cpos="xy")
 
@@ -512,7 +512,7 @@ def download_cow(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cow()
     >>> dataset.plot(cpos="xy")
 
@@ -544,7 +544,7 @@ def download_cow_head(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cow_head()
     >>> dataset.plot(cpos="xy")
 
@@ -568,7 +568,7 @@ def download_faults(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_faults()
     >>> dataset.plot(line_width=4)
 
@@ -592,7 +592,7 @@ def download_tensors(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_tensors()
     >>> dataset.plot()
 
@@ -617,7 +617,7 @@ def download_head(load=True):  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_head()
     >>> pl = pyvista.Plotter()
     >>> _ = pl.add_volume(dataset, cmap="cool", opacity="sigmoid_6")
@@ -653,7 +653,7 @@ def download_head_2(load=True):  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_head_2()
     >>> pl = pyvista.Plotter()
     >>> _ = pl.add_volume(dataset, cmap="cool", opacity="sigmoid_6")
@@ -681,7 +681,7 @@ def download_bolt_nut(load=True):  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_bolt_nut()
     >>> pl = pyvista.Plotter()
     >>> _ = pl.add_volume(
@@ -725,7 +725,7 @@ def download_clown(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_clown()
     >>> dataset.plot()
 
@@ -749,7 +749,7 @@ def download_topo_global(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_topo_global()
     >>> dataset.plot(cmap="gist_earth")
 
@@ -778,7 +778,7 @@ def download_topo_land(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_topo_land()
     >>> dataset.plot(
     ...     clim=[-2000, 3000], cmap="gist_earth", show_scalar_bar=False
@@ -809,7 +809,7 @@ def download_coastlines(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_coastlines()
     >>> dataset.plot()
 
@@ -833,7 +833,7 @@ def download_knee(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_knee()
     >>> dataset.plot(cpos="xy", show_scalar_bar=False)
 
@@ -863,7 +863,7 @@ def download_knee_full(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_knee_full()
     >>> cpos = [
     ...     (-381.74, -46.02, 216.54),
@@ -899,7 +899,7 @@ def download_lidar(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_lidar()
     >>> dataset.plot(cmap="gist_earth")
 
@@ -928,7 +928,7 @@ def download_exodus(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_exodus()
     >>> dataset.plot()
 
@@ -952,7 +952,7 @@ def download_nefertiti(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_nefertiti()
     >>> dataset.plot(cpos="xz")
 
@@ -989,7 +989,7 @@ def download_blood_vessels(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_blood_vessels()
     >>> dataset.plot()
 
@@ -1027,7 +1027,7 @@ def download_iron_protein(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_iron_protein()
     >>> dataset.plot(volume=True, cmap='blues')
 
@@ -1054,7 +1054,7 @@ def download_tetrahedron(load=True):  # pragma: no cover
     Shrink and plot the dataset to show it is composed of several
     tetrahedrons.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_tetrahedron()
     >>> dataset.shrink(0.85).plot()
 
@@ -1078,7 +1078,7 @@ def download_saddle_surface(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_saddle_surface()
     >>> dataset.plot()
 
@@ -1107,7 +1107,7 @@ def download_sparse_points(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_sparse_points()
     >>> dataset.plot(
     ...     scalars="val", render_points_as_spheres=True, point_size=50
@@ -1150,7 +1150,7 @@ def download_foot_bones(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_foot_bones()
     >>> dataset.plot()
 
@@ -1177,7 +1177,7 @@ def download_guitar(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_guitar()
     >>> dataset.plot()
 
@@ -1204,7 +1204,7 @@ def download_quadratic_pyramid(load=True):  # pragma: no cover
     Shrink and plot the dataset to show it is composed of several
     pyramids.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_quadratic_pyramid()
     >>> dataset.shrink(0.4).plot()
 
@@ -1228,7 +1228,7 @@ def download_bird(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_bird()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -1252,7 +1252,7 @@ def download_bird_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_bird_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -1276,7 +1276,7 @@ def download_office(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_office()
     >>> dataset.contour().plot()
 
@@ -1303,7 +1303,7 @@ def download_horse_points(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_horse_points()
     >>> dataset.plot(point_size=1)
 
@@ -1327,7 +1327,7 @@ def download_horse(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_horse()
     >>> dataset.plot(smooth_shading=True)
 
@@ -1354,7 +1354,7 @@ def download_cake_easy(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cake_easy()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -1378,7 +1378,7 @@ def download_cake_easy_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cake_easy_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -1404,7 +1404,7 @@ def download_rectilinear_grid(load=True):  # pragma: no cover
     --------
     Compute the threshold of this dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_rectilinear_grid()
     >>> dataset.threshold(0.0001).plot()
 
@@ -1431,7 +1431,7 @@ def download_gourds(zoom=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gourds()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -1463,7 +1463,7 @@ def download_gourds_texture(zoom=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gourds_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -1489,7 +1489,7 @@ def download_gourds_pnm(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gourds_pnm()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -1513,7 +1513,7 @@ def download_unstructured_grid(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_unstructured_grid()
     >>> dataset.plot(show_edges=True)
 
@@ -1537,7 +1537,7 @@ def download_letter_k(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_letter_k()
     >>> dataset.plot(cpos="xy")
 
@@ -1561,7 +1561,7 @@ def download_letter_a(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_letter_a()
     >>> dataset.plot(cpos="xy", show_edges=True)
 
@@ -1588,7 +1588,7 @@ def download_poly_line(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_poly_line()
     >>> dataset.plot(line_width=5)
 
@@ -1612,7 +1612,7 @@ def download_cad_model(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cad_model()
     >>> dataset.plot()
 
@@ -1639,7 +1639,7 @@ def download_frog(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [8.4287e02, -5.7418e02, -4.4085e02],
     ...     [2.4950e02, 2.3450e02, 1.0125e02],
@@ -1673,7 +1673,7 @@ def download_chest(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_chest()
     >>> dataset.plot(cpos="xy")
 
@@ -1700,7 +1700,7 @@ def download_brain_atlas_with_sides(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_brain_atlas_with_sides()
     >>> dataset.slice(normal='z').plot(cpos='xy')
 
@@ -1724,7 +1724,7 @@ def download_prostate(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_prostate()
     >>> dataset.plot(cpos="xy")
 
@@ -1748,7 +1748,7 @@ def download_filled_contours(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_filled_contours()
     >>> dataset.plot(cpos="xy")
 
@@ -1772,7 +1772,7 @@ def download_doorman(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_doorman()
     >>> dataset.plot(cpos="xy")
 
@@ -1800,7 +1800,7 @@ def download_mug(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_mug()
     >>> dataset.plot()
 
@@ -1824,7 +1824,7 @@ def download_oblique_cone(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_oblique_cone()
     >>> dataset.plot()
 
@@ -1848,7 +1848,7 @@ def download_emoji(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_emoji()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -1872,7 +1872,7 @@ def download_emoji_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_emoji_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -1896,7 +1896,7 @@ def download_teapot(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_teapot()
     >>> dataset.plot(cpos="xy")
 
@@ -1925,7 +1925,7 @@ def download_brain(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_brain()
     >>> dataset.plot(volume=True)
 
@@ -1957,7 +1957,7 @@ def download_structured_grid(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_structured_grid()
     >>> dataset.plot(show_edges=True)
 
@@ -1981,7 +1981,7 @@ def download_structured_grid_two(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_structured_grid_two()
     >>> dataset.plot(show_edges=True)
 
@@ -2005,7 +2005,7 @@ def download_trumpet(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_trumpet()
     >>> dataset.plot()
 
@@ -2029,7 +2029,7 @@ def download_face(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_face()
     >>> dataset.plot()
 
@@ -2058,7 +2058,7 @@ def download_sky_box_nz(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_sky_box_nz()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -2082,7 +2082,7 @@ def download_sky_box_nz_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_sky_box_nz_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -2106,7 +2106,7 @@ def download_disc_quads(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_disc_quads()
     >>> dataset.plot(show_edges=True)
 
@@ -2130,7 +2130,7 @@ def download_honolulu(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_honolulu()
     >>> dataset.plot(
     ...     scalars=dataset.points[:, 2],
@@ -2159,7 +2159,7 @@ def download_motor(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_motor()
     >>> dataset.plot()
 
@@ -2183,7 +2183,7 @@ def download_tri_quadratic_hexahedron(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_tri_quadratic_hexahedron()
     >>> dataset.plot()
 
@@ -2215,7 +2215,7 @@ def download_human(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_human()
     >>> dataset.plot()
 
@@ -2239,7 +2239,7 @@ def download_vtk(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_vtk()
     >>> dataset.plot(cpos="xy", line_width=5)
 
@@ -2263,7 +2263,7 @@ def download_spider(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_spider()
     >>> dataset.plot()
 
@@ -2287,7 +2287,7 @@ def download_carotid(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [220.96, -24.38, -69.96],
     ...     [135.86, 106.55, 17.72],
@@ -2328,7 +2328,7 @@ def download_blow(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [71.96, 86.1, 28.45],
     ...     [3.5, 12.0, 1.0],
@@ -2363,7 +2363,7 @@ def download_shark(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [-2.3195e02, -3.3930e01, 1.2981e02],
     ...     [-8.7100e00, 1.9000e-01, -1.1740e01],
@@ -2392,7 +2392,7 @@ def download_dragon(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_dragon()
     >>> dataset.plot(cpos="xy")
 
@@ -2425,7 +2425,7 @@ def download_armadillo(load=True):  # pragma: no cover
     --------
     Plot the armadillo dataset. Use a custom camera position.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     (161.5, 82.1, -330.2),
     ...     (-4.3, 24.5, -1.6),
@@ -2457,7 +2457,7 @@ def download_gears(load=True):  # pragma: no cover
     Download the dataset, split the bodies, and color each one.
 
     >>> import numpy as np
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gears()
     >>> bodies = dataset.split_bodies()
     >>> for i, body in enumerate(bodies):  # pragma: no cover
@@ -2486,7 +2486,7 @@ def download_torso(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_torso()
     >>> dataset.plot(cpos="xz")
 
@@ -2517,7 +2517,7 @@ def download_kitchen(split=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_kitchen()
     >>> dataset.streamlines(n_points=5).plot()
 
@@ -2576,7 +2576,7 @@ def download_tetra_dc_mesh():  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> fine, coarse = examples.download_tetra_dc_mesh()
     >>> coarse.plot()
 
@@ -2605,7 +2605,7 @@ def download_model_with_variance(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_model_with_variance()
     >>> dataset.plot()
 
@@ -2631,7 +2631,7 @@ def download_thermal_probes(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_thermal_probes()
     >>> dataset.plot(
     ...     render_points_as_spheres=True, point_size=5, cpos="xy"
@@ -2680,7 +2680,7 @@ def download_carburetor(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_carburetor()
     >>> dataset.plot()
 
@@ -2704,7 +2704,7 @@ def download_turbine_blade(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_turbine_blade()
     >>> dataset.plot()
 
@@ -2728,7 +2728,7 @@ def download_pine_roots(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_pine_roots()
     >>> dataset.plot()
 
@@ -2754,7 +2754,7 @@ def download_crater_topo(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_crater_topo()
     >>> dataset.plot(cmap="gist_earth", cpos="xy")
 
@@ -2783,7 +2783,7 @@ def download_crater_imagery(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [66.0, 73.0, -382.6],
     ...     [66.0, 73.0, 0.0],
@@ -2814,7 +2814,7 @@ def download_dolfin(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_dolfin()
     >>> dataset.plot(cpos="xy", show_edges=True)
 
@@ -2838,7 +2838,7 @@ def download_damavand_volcano(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [4.66316700e04, 4.32796241e06, -3.82467050e05],
     ...     [5.52532740e05, 3.98017300e06, -2.47450000e04],
@@ -2875,7 +2875,7 @@ def download_delaunay_example(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_delaunay_example()
     >>> dataset.plot(show_edges=True)
 
@@ -2899,7 +2899,7 @@ def download_embryo(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_embryo()
     >>> dataset.plot(volume=True)
 
@@ -2937,7 +2937,7 @@ def download_antarctica_velocity(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_antarctica_velocity()
     >>> dataset.plot(
     ...     cpos='xy', clim=[1e-3, 1e4], cmap='Blues', log_scale=True
@@ -2970,7 +2970,7 @@ def download_room_surface_mesh(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_room_surface_mesh()
     >>> dataset.plot()
 
@@ -2996,7 +2996,7 @@ def download_beach(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_beach()
     >>> dataset.plot(rgba=True, cpos="xy")
 
@@ -3020,7 +3020,7 @@ def download_rgba_texture(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_rgba_texture()
     >>> dataset.plot(cpos="xy")
 
@@ -3046,7 +3046,7 @@ def download_vtk_logo(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_vtk_logo()
     >>> dataset.plot(cpos="xy")
 
@@ -3064,7 +3064,7 @@ def download_sky_box_cube_map():  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista as pv
     >>> pl = pv.Plotter()
     >>> dataset = examples.download_sky_box_cube_map()
@@ -3102,7 +3102,7 @@ def download_cubemap_park():  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista as pv
     >>> pl = pv.Plotter(lighting=None)
     >>> dataset = examples.download_cubemap_park()
@@ -3139,7 +3139,7 @@ def download_cubemap_space_4k():  # pragma: no cover
     Display the cubemap as both an environment texture and an actor.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cubemap = examples.download_cubemap_space_4k()
     >>> pl = pv.Plotter(lighting=None)
     >>> _ = pl.add_actor(cubemap.to_skybox())
@@ -3182,7 +3182,7 @@ def download_cubemap_space_16k():  # pragma: no cover
     in the documentation.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cubemap = examples.download_cubemap_space_4k()
     >>> pl = pv.Plotter(lighting=None)
     >>> _ = pl.add_actor(cubemap.to_skybox())
@@ -3214,7 +3214,7 @@ def download_backward_facing_step(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_backward_facing_step()
     >>> dataset.plot()
 
@@ -3241,7 +3241,7 @@ def download_gpr_data_array(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gpr_data_array()  # doctest:+SKIP
     >>> dataset  # doctest:+SKIP
     array([[nan, nan, nan, ..., nan, nan, nan],
@@ -3277,7 +3277,7 @@ def download_gpr_path(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_gpr_path()
     >>> dataset.plot()
 
@@ -3309,7 +3309,7 @@ def download_woman(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_woman()
     >>> cpos = [
     ...     (-2600.0, 1970.6, 1836.9),
@@ -3340,7 +3340,7 @@ def download_lobster(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_lobster()
     >>> dataset.plot()
 
@@ -3366,7 +3366,7 @@ def download_face2(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_face2()
     >>> dataset.plot()
 
@@ -3392,7 +3392,7 @@ def download_urn(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [
     ...     [-7.123e02, 5.715e02, 8.601e02],
     ...     [4.700e00, 2.705e02, -1.010e01],
@@ -3423,7 +3423,7 @@ def download_pepper(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_pepper()
     >>> dataset.plot()
 
@@ -3449,7 +3449,7 @@ def download_drill(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_drill()
     >>> dataset.plot()
 
@@ -3480,7 +3480,7 @@ def download_action_figure(load=True):  # pragma: no cover
     plot.
 
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_action_figure()
     >>> _ = dataset.clean(inplace=True)
     >>> pl = pyvista.Plotter(lighting=None)
@@ -3554,7 +3554,7 @@ def download_notch_stress(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_notch_stress()
     >>> dataset.plot(cmap='bwr')
 
@@ -3578,7 +3578,7 @@ def download_notch_displacement(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_notch_displacement()
     >>> dataset.plot(cmap='bwr')
 
@@ -3610,7 +3610,7 @@ def download_louis_louvre(load=True):  # pragma: no cover
     --------
     Plot the Louis XIV statue with custom lighting and camera angle.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_louis_louvre()
     >>> pl = pyvista.Plotter(lighting=None)
@@ -3645,7 +3645,7 @@ def download_cylinder_crossflow(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cylinder_crossflow()
     >>> dataset.plot(cpos='xy', cmap='blues', rng=[-200, 500])
 
@@ -3681,7 +3681,7 @@ def download_naca(load=True):  # pragma: no cover
     Plot the density of the air surrounding the NACA airfoil using the
     ``"jet"`` color map.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> cpos = [[-0.22, 0.0, 2.52], [0.43, 0.0, 0.0], [0.0, 1.0, 0.0]]
     >>> dataset = examples.download_naca()
     >>> dataset.plot(cpos=cpos, cmap="jet")
@@ -3714,7 +3714,7 @@ def download_wavy(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_wavy()
     >>> dataset.plot()
 
@@ -3746,7 +3746,7 @@ def download_single_sphere_animation(load=True):  # pragma: no cover
     >>> import os
     >>> from tempfile import mkdtemp
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> filename = examples.download_single_sphere_animation(load=False)
     >>> reader = pyvista.PVDReader(filename)
 
@@ -3798,7 +3798,7 @@ def download_dual_sphere_animation(load=True):  # pragma: no cover
     >>> import os
     >>> from tempfile import mkdtemp
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> filename = examples.download_dual_sphere_animation(load=False)
     >>> reader = pyvista.PVDReader(filename)
 
@@ -3856,7 +3856,7 @@ def download_osmnx_graph():  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> graph = examples.download_osmnx_graph()  # doctest:+SKIP
 
     See :ref:`open_street_map_example` for a full example using this dataset.
@@ -3892,7 +3892,7 @@ def download_cavity(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cavity()  # doctest:+SKIP
 
     See :ref:`openfoam_example` for a full example using this dataset.
@@ -3930,7 +3930,7 @@ def download_openfoam_tubes(load=True):  # pragma: no cover
     Plot the outline of the dataset along with a cross section of the flow velocity.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_openfoam_tubes()
     >>> air = dataset[0]
     >>> y_slice = air.slice('y')
@@ -3981,7 +3981,7 @@ def download_lucy(load=True):  # pragma: no cover
     --------
     Plot the Lucy Angel dataset with custom lighting.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_lucy()
 
@@ -4039,7 +4039,7 @@ def download_pump_bracket(load=True):  # pragma: no cover
     Load the dataset.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_pump_bracket()
     >>> dataset
     UnstructuredGrid (...)
@@ -4103,7 +4103,7 @@ def download_electronics_cooling(load=True):  # pragma: no cover
     Load the datasets and plot the air velocity through the electronics.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> structure, air = examples.download_electronics_cooling()
     >>> structure, air
     (PolyData (...)
@@ -4179,7 +4179,7 @@ def download_can(partial=False, load=True):  # pragma: no cover
     --------
     Plot the can dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_can()  # doctest:+SKIP
     >>> dataset.plot(scalars='VEL', smooth_shading=True)  # doctest:+SKIP
@@ -4231,7 +4231,7 @@ def download_can_crushed_hdf(load=True):  # pragma: no cover
     --------
     Plot the crushed can dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_can_crushed_hdf()
     >>> dataset.plot(smooth_shading=True)
@@ -4263,7 +4263,7 @@ def download_cgns_structured(load=True):  # pragma: no cover
     --------
     Plot the example CGNS dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_cgns_structured()
     >>> dataset[0].plot(scalars='Density')
@@ -4298,7 +4298,7 @@ def download_tecplot_ascii(load=True):  # pragma: no cover
     --------
     Plot the example Tecplot dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_tecplot_ascii()
     >>> dataset.plot()
@@ -4335,7 +4335,7 @@ def download_cgns_multi(load=True):  # pragma: no cover
     ``"ViscosityEddy"``. Convert the cell data to point data as in this
     dataset, the solution is stored within the cells.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista
     >>> dataset = examples.download_cgns_multi()
     >>> ugrid = dataset.combine()
@@ -4403,7 +4403,7 @@ def download_dicom_stack(load: bool = True) -> Union[pyvista.UniformGrid, str]: 
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_dicom_stack()
     >>> dataset.plot(volume=True, zoom=3, show_scalar_bar=False)
 
@@ -4432,7 +4432,7 @@ def download_parched_canal_4k(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_parched_canal_4k()
     >>> dataset.plot(cpos="xy")
 
@@ -4456,7 +4456,7 @@ def download_cells_nd(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_cells_nd()
     >>> dataset.plot(cpos="xy")
 
@@ -4488,7 +4488,7 @@ def download_moonlanding_image(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_moonlanding_image()
     >>> dataset.plot(
     ...     cpos='xy',
@@ -4519,7 +4519,7 @@ def download_angular_sector(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_angular_sector()
     >>> dataset.plot(scalars='PointId')
 
@@ -4552,7 +4552,7 @@ def download_mount_damavand(load=True):  # pragma: no cover
     --------
     Download the Damavand dataset and plot it after warping it by its altitude.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_mount_damavand()
     >>> dataset = dataset.cell_data_to_point_data()
     >>> dataset = dataset.warp_by_scalar('z', factor=2)
@@ -4583,7 +4583,7 @@ def download_particles_lethe(load=True):  # pragma: no cover
     --------
     Download the particles dataset and plot it after generating glyphs.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> particles = examples.download_particles_lethe()
     >>> particles.plot(
     ...     render_points_as_spheres=True,
@@ -4616,7 +4616,7 @@ def download_gif_simple(load=True):  # pragma: no cover
     --------
     Download and plot the first frame of a simple GIF.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_gif_simple()
     >>> grid.plot(
     ...     scalars='frame0',
@@ -4661,7 +4661,7 @@ def download_cloud_dark_matter(load=True):  # pragma: no cover
     Download the dark matter cloud and display its representation.
 
     >>> import numpy as np
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> pc = examples.download_cloud_dark_matter()
     >>> pc
     PointSet (...)
@@ -4715,7 +4715,7 @@ def download_cloud_dark_matter_dense(load=True):  # pragma: no cover
     Download the dark matter cloud and display its representation.
 
     >>> import numpy as np
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> pc = examples.download_cloud_dark_matter_dense()
     >>> pc
     PointSet (...)
@@ -4782,7 +4782,7 @@ def download_stars_cloud_hyg(load=True):  # pragma: no cover
     are colored according to their RGBA colors.
 
     >>> import numpy as np
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> stars = examples.download_stars_cloud_hyg()
     >>> stars.plot(
     ...     style='points_gaussian',
@@ -4830,14 +4830,14 @@ def download_fea_bracket(load=True):  # pragma: no cover
     --------
     Download and plot equivalent cell stress.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_fea_bracket()
     >>> grid.plot()
 
     Plot the point stress using the ``'jet'`` color map. Convert the cell data
     to point data.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_fea_bracket()
     >>> grid = grid.cell_data_to_point_data()
     >>> grid.plot(smooth_shading=True, split_sharp_edges=True, cmap='jet')
@@ -4871,7 +4871,7 @@ def download_fea_hertzian_contact_cylinder(load=True):  # pragma: no cover
 
     >>> import numpy as np
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_fea_hertzian_contact_cylinder()
     >>> grid.plot(
     ...     scalars='PartID', cmap=['green', 'blue'], show_scalar_bar=False
@@ -4931,7 +4931,7 @@ def download_black_vase(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_black_vase()
     >>> mesh.plot()
 
@@ -4985,7 +4985,7 @@ def download_ivan_angel(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_ivan_angel()
     >>> cpos = [
     ...     (-476.14, -393.73, 282.14),
@@ -5043,7 +5043,7 @@ def download_bird_bath(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_bird_bath()
     >>> mesh.plot()
 
@@ -5096,7 +5096,7 @@ def download_owl(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_owl()
     >>> cpos = [
     ...     (-315.18, -402.21, 230.71),
@@ -5154,7 +5154,7 @@ def download_plastic_vase(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_plastic_vase()
     >>> mesh.plot()
 
@@ -5207,7 +5207,7 @@ def download_sea_vase(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_sea_vase()
     >>> mesh.plot()
 
@@ -5246,7 +5246,7 @@ def download_dikhololo_night():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> gltf_file = examples.gltf.download_damaged_helmet()
     >>> texture = examples.download_dikhololo_night()
     >>> pl = pyvista.Plotter()
@@ -5286,7 +5286,7 @@ def download_cad_model_case(load=True):  # pragma: no cover
     --------
     Download and plot the dataset.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.download_cad_model_case()
     >>> mesh.plot()
 
@@ -5338,7 +5338,7 @@ def download_aero_bracket(load=True):  # pragma: no cover
     --------
     Download the aero bracket.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_aero_bracket()
     >>> dataset
     UnstructuredGrid (...)
@@ -5405,7 +5405,7 @@ def download_coil_magnetic_field(load=True):  # pragma: no cover
     Download the magnetic field dataset and generate streamlines from the field.
 
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_coil_magnetic_field()
     >>> seed = pv.Disc(inner=1, outer=5.2, r_res=3, c_res=12)
     >>> strl = grid.streamlines_from_source(
@@ -5427,7 +5427,7 @@ def download_coil_magnetic_field(load=True):  # pragma: no cover
 
     >>> import numpy as np
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.download_coil_magnetic_field()
     >>> # create coils
     >>> coils = []
@@ -5488,7 +5488,7 @@ def download_meshio_xdmf(load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.download_meshio_xdmf()
     >>> dataset.plot()
 
