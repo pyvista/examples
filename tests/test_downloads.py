@@ -4,8 +4,8 @@ from pathlib import PureWindowsPath
 import pytest
 
 import pyvista as pv
-from pyvista import examples
-from pyvista.examples import downloads
+import pvexamples as examples
+from pvexamples import downloads
 
 
 def test_delete_downloads(tmpdir):
@@ -76,7 +76,7 @@ def test_file_copier(tmpdir):
 
 
 def test_local_file_cache(tmpdir):
-    """Ensure that pyvista.examples.downloads can work with a local cache."""
+    """Ensure that pvexamples.downloads can work with a local cache."""
     basename = os.path.basename(examples.mapfile)
     dirname = os.path.dirname(examples.mapfile)
     downloads.FETCHER.registry[basename] = None

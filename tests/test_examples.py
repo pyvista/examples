@@ -3,7 +3,7 @@ import numpy as np
 import pytest
 
 import pyvista as pv
-from pyvista import examples
+import pvexamples as examples
 
 
 def test_load_nut():

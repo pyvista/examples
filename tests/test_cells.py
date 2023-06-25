@@ -1,5 +1,5 @@
 from pyvista import CellType
-from pyvista.examples import cells
+from pvexamples import cells
 
 
 def test_empty():
