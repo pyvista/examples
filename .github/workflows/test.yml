@@ -17,13 +17,38 @@ jobs:
         python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+          cache: 'pip'
+          cache-dependency-path:  |
+            requirements.txt
+            requirements_test.txt
+
+      - name: Set up headless display
+        uses: pyvista/setup-headless-display-action@v2
+
+      - name: Install PyVista
+        run: pip install . --no-deps
+
+      - name: Install test dependencies
+        run: pip install vtk -r requirements_test.txt
+
+      - name: Set example data path as env variable
         run: |
-          pip install -r requirements_test.txt
+          chcp 65001 #set code page to utf-8
+          echo ("PYVISTA_EXAMPLE_DATA_PATH=" + $(python -c "import pyexamples as examples; print(examples.USER_DATA_PATH)")) >> $env:GITHUB_ENV
+
+      - name: Cache example data
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
+          key: Examples-1-${{ hashFiles('*') }}
+          restore-keys: |
+            Examples-1-
+
       - name: Install pvplanets
         run: pip install -e .
       - name: Run Tests
