@@ -38,7 +38,7 @@ jobs:
 
       - name: Set example data path as env variable
         run: |
-          chcp 65001 #set code page to utf-8
+          # chcp 65001 #set code page to utf-8
           echo ("PYVISTA_EXAMPLE_DATA_PATH=" + $(python -c "import pvexamples as examples; print(examples.USER_DATA_PATH)")) >> $env:GITHUB_ENV
 
       - name: Cache example data
