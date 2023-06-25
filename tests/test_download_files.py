@@ -1,7 +1,7 @@
 """
 Test downloading files.
 """
-from pvplanets import planets
+from pvexamples import planets
 
 
 def test_load_sun():

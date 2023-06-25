@@ -1,6 +1,6 @@
 """Test examples that do not require downloading."""
 import pyvista as pv
-from pvplanets import planets
+from pvexamples import planets
 
 
 def test_sphere_with_texture_map():
