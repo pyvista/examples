@@ -7,7 +7,6 @@ on:
       - main
   schedule:
     - cron: "0 0 * * *"
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -17,7 +16,6 @@ jobs:
         python-version: ["3.11"]
     steps:
       - uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -26,16 +24,12 @@ jobs:
           cache-dependency-path:  |
             requirements.txt
             requirements_test.txt
-
       - name: Set up headless display
         uses: pyvista/setup-headless-display-action@v2
-
       - name: Install PyVista
         run: pip install . --no-deps
-
       - name: Install test dependencies
         run: pip install vtk -r requirements_test.txt
-
       - name: Cache example data
         uses: actions/cache@v3
         with:
@@ -43,7 +37,6 @@ jobs:
           key: Examples-1-${{ hashFiles('*') }}
           restore-keys: |
             Examples-1-
-
       - name: Install pvplanets
         run: pip install -e .
       - name: Run Tests
