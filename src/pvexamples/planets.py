@@ -11,9 +11,9 @@ Examples
 import numpy as np
 
 import pyvista
-from pvexamples import planets
+from pyvista import examples
 
-from .downloads import _download_and_read
+from pyvista.examples.downloads import _download_and_read
 
 
 def _sphere_with_texture_map(radius=1.0, lat_resolution=50, lon_resolution=100):
@@ -285,7 +285,7 @@ def load_mars(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no 
     sphere = _sphere_with_texture_map(
         radius=radius, lat_resolution=lat_resolution, lon_resolution=lon_resolution
     )
-    surface = planets.download_mars_surface(texture=True)
+    surface = download_mars_surface(texture=True)
     sphere.textures["surface"] = surface
     return sphere
 
@@ -529,7 +529,7 @@ def load_pluto(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no
     sphere = _sphere_with_texture_map(
         radius=radius, lat_resolution=lat_resolution, lon_resolution=lon_resolution
     )
-    surface = planets.download_pluto_surface(texture=True)
+    surface = download_pluto_surface(texture=True)
     sphere.textures["surface"] = surface
     return sphere
 
