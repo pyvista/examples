@@ -36,15 +36,10 @@ jobs:
       - name: Install test dependencies
         run: pip install vtk -r requirements_test.txt
 
-      - name: Set example data path as env variable
-        run: |
-          # chcp 65001 #set code page to utf-8
-          echo ("PYVISTA_EXAMPLE_DATA_PATH=" + $(python -c "import pvexamples as examples; print(examples.USER_DATA_PATH)")) >> $env:GITHUB_ENV
-
       - name: Cache example data
         uses: actions/cache@v3
         with:
-          path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
+          path: ~/.local/share/pyvista/examples
           key: Examples-1-${{ hashFiles('*') }}
           restore-keys: |
             Examples-1-
