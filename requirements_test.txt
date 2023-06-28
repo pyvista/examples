@@ -1,0 +1,4 @@
+# Note: using < here to reduce breakages
+# These should be automatically kept up to date by dependabot
+-r requirements.txt
+sympy<1.12.0
