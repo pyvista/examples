@@ -1,8 +1,8 @@
 """Examples module."""
 # flake8: noqa: F401
 
-from pyvista.examples.downloads import *
-from pyvista.examples.examples import *
+from pvexamples.downloads import *
+from pvexamples.examples import *
 from . import planets
 from . import gltf
 from . import vrml
