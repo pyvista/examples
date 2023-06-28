@@ -3,7 +3,6 @@
 Examples
 --------
 >>> import pvexamples as examples
->>> from pyvista import examples
 >>> mesh = examples.load_ant()
 >>> mesh.plot()
 
@@ -39,8 +38,7 @@ def load_ant():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_ant()
+        >>> dataset = examples.load_ant()
     >>> dataset.plot()
 
     """
@@ -58,8 +56,7 @@ def load_airplane():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_airplane()
+        >>> dataset = examples.load_airplane()
     >>> dataset.plot()
 
     """
@@ -77,8 +74,7 @@ def load_sphere():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_sphere()
+        >>> dataset = examples.load_sphere()
     >>> dataset.plot()
 
     """
@@ -96,8 +92,7 @@ def load_uniform():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_uniform()
+        >>> dataset = examples.load_uniform()
     >>> dataset.plot()
 
     """
@@ -115,8 +110,7 @@ def load_rectilinear():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_rectilinear()
+        >>> dataset = examples.load_rectilinear()
     >>> dataset.plot()
 
     """
@@ -134,8 +128,7 @@ def load_hexbeam():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_hexbeam()
+        >>> dataset = examples.load_hexbeam()
     >>> dataset.plot()
 
     """
@@ -153,8 +146,7 @@ def load_tetbeam():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_tetbeam()
+        >>> dataset = examples.load_tetbeam()
     >>> dataset.plot()
 
     """
@@ -177,8 +169,7 @@ def load_structured():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_structured()
+        >>> dataset = examples.load_structured()
     >>> dataset.plot()
 
     """
@@ -201,8 +192,7 @@ def load_globe():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_globe()
+        >>> dataset = examples.load_globe()
     >>> dataset.plot()
 
     """
@@ -222,8 +212,7 @@ def load_globe_texture():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_globe_texture()
+        >>> dataset = examples.load_globe_texture()
     >>> dataset.plot()
 
     """
@@ -241,8 +230,7 @@ def load_channels():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> dataset = examples.load_channels()
+        >>> dataset = examples.load_channels()
     >>> dataset.plot()
 
     """
@@ -274,8 +262,7 @@ def load_spline():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> spline = examples.load_spline()
+        >>> spline = examples.load_spline()
     >>> spline.plot()
 
     """
@@ -309,8 +296,7 @@ def load_random_hills():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> mesh = examples.load_random_hills()
+        >>> mesh = examples.load_random_hills()
     >>> mesh.plot()
 
     """
@@ -329,8 +315,7 @@ def load_sphere_vectors():
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> mesh = examples.load_sphere_vectors()
+        >>> mesh = examples.load_sphere_vectors()
     >>> mesh.point_data
     pyvista DataSetAttributes
     Association     : POINT
@@ -378,8 +363,7 @@ def load_explicit_structured(dimensions=(5, 6, 7), spacing=(20, 10, 1)):
     Examples
     --------
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> grid = examples.load_explicit_structured()
+        >>> grid = examples.load_explicit_structured()
     >>> grid.plot(show_edges=True)
 
     """
@@ -423,8 +407,7 @@ def load_nut():
     Load an example nut and plot with smooth shading.
 
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> mesh = examples.load_nut()
+        >>> mesh = examples.load_nut()
     >>> mesh.plot(smooth_shading=True, split_sharp_edges=True)
 
     """
@@ -478,8 +461,7 @@ def load_hydrogen_orbital(n=1, l=0, m=0, zoom_fac=1.0):
     numbers ``n=3``, ``l=2``, and ``m=-2``.
 
     >>> import pvexamples as examples
-    >>> from pyvista import examples
-    >>> grid = examples.load_hydrogen_orbital(3, 2, -2)
+        >>> grid = examples.load_hydrogen_orbital(3, 2, -2)
     >>> grid.plot(volume=True, opacity=[1, 0, 1], cmap='magma')
 
     See :ref:`plot_atomic_orbitals_example` for additional examples using
