@@ -2,5 +2,5 @@
 # These should be automatically kept up to date by dependabot
 -r requirements.txt
 meshio<5.4.0
-pytest<7.4.0
+pytest<7.5.0
 sympy<1.13.0
