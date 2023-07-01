@@ -1,3 +1,9 @@
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
 jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
@@ -28,6 +34,7 @@ jobs:
         --wheel
         --outdir dist/
     - name: Publish distribution  to Test PyPI
+      if: contains(github.ref, 'main')
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
