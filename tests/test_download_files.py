@@ -695,7 +695,7 @@ def test_download_dolfin():
 
 def test_download_meshio_xdmf():
     dataset = examples.download_meshio_xdmf()
-    assert isinstance(dataset, pv.UnstructuredGrid)
+    assert isinstance(dataset, pv.MultiBlock)
 
 
 def test_download_damavand_volcano():
