@@ -2,7 +2,7 @@
 
 Examples
 --------
->>> from pyvista import examples
+>>> import pvexamples as examples
 >>> mesh = examples.load_ant()
 >>> mesh.plot()
 
@@ -37,7 +37,7 @@ def load_ant():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_ant()
     >>> dataset.plot()
 
@@ -55,7 +55,7 @@ def load_airplane():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_airplane()
     >>> dataset.plot()
 
@@ -73,7 +73,7 @@ def load_sphere():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_sphere()
     >>> dataset.plot()
 
@@ -86,17 +86,17 @@ def load_uniform():
 
     Returns
     -------
-    pyvista.UniformGrid
+    pyvista.ImageData
         Dataset.
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_uniform()
     >>> dataset.plot()
 
     """
-    return pyvista.UniformGrid(uniformfile)
+    return pyvista.ImageData(uniformfile)
 
 
 def load_rectilinear():
@@ -109,7 +109,7 @@ def load_rectilinear():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_rectilinear()
     >>> dataset.plot()
 
@@ -127,7 +127,7 @@ def load_hexbeam():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_hexbeam()
     >>> dataset.plot()
 
@@ -145,7 +145,7 @@ def load_tetbeam():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_tetbeam()
     >>> dataset.plot()
 
@@ -168,7 +168,7 @@ def load_structured():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_structured()
     >>> dataset.plot()
 
@@ -191,9 +191,10 @@ def load_globe():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_globe()
-    >>> dataset.plot()
+    >>> texture = examples.load_globe_texture()
+    >>> dataset.plot(texture=texture)
 
     """
     globe = pyvista.PolyData(globefile)
@@ -211,7 +212,7 @@ def load_globe_texture():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_globe_texture()
     >>> dataset.plot()
 
@@ -224,12 +225,12 @@ def load_channels():
 
     Returns
     -------
-    pyvista.UniformGrid
+    pyvista.ImageData
         Dataset.
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> dataset = examples.load_channels()
     >>> dataset.plot()
 
@@ -261,7 +262,7 @@ def load_spline():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> spline = examples.load_spline()
     >>> spline.plot()
 
@@ -295,7 +296,7 @@ def load_random_hills():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.load_random_hills()
     >>> mesh.plot()
 
@@ -314,7 +315,7 @@ def load_sphere_vectors():
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.load_sphere_vectors()
     >>> mesh.point_data
     pyvista DataSetAttributes
@@ -362,7 +363,7 @@ def load_explicit_structured(dimensions=(5, 6, 7), spacing=(20, 10, 1)):
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.load_explicit_structured()
     >>> grid.plot(show_edges=True)
 
@@ -406,7 +407,7 @@ def load_nut():
     --------
     Load an example nut and plot with smooth shading.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.load_nut()
     >>> mesh.plot(smooth_shading=True, split_sharp_edges=True)
 
@@ -415,7 +416,7 @@ def load_nut():
 
 
 def load_hydrogen_orbital(n=1, l=0, m=0, zoom_fac=1.0):
-    """Load the hydrogen wave function for a :class:`pyvista.UniformGrid`.
+    """Load the hydrogen wave function for a :class:`pyvista.ImageData`.
 
     This is the solution to the Schrödinger equation for hydrogen
     evaluated in three-dimensional Cartesian space.
@@ -445,8 +446,8 @@ def load_hydrogen_orbital(n=1, l=0, m=0, zoom_fac=1.0):
 
     Returns
     -------
-    pyvista.UniformGrid
-        UniformGrid containing two ``point_data`` arrays:
+    pyvista.ImageData
+        ImageData containing two ``point_data`` arrays:
 
         * ``'real_wf'`` - Real part of the wave function.
         * ``'wf'`` - Complex wave function.
@@ -460,7 +461,7 @@ def load_hydrogen_orbital(n=1, l=0, m=0, zoom_fac=1.0):
     Plot the 3dxy orbital of a hydrogen atom. This corresponds to the quantum
     numbers ``n=3``, ``l=2``, and ``m=-2``.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.load_hydrogen_orbital(3, 2, -2)
     >>> grid.plot(volume=True, opacity=[1, 0, 1], cmap='magma')
 
@@ -495,7 +496,7 @@ def load_hydrogen_orbital(n=1, l=0, m=0, zoom_fac=1.0):
 
     dim = 100
     sp = (org * 2) / (dim - 1)
-    grid = pyvista.UniformGrid(
+    grid = pyvista.ImageData(
         dimensions=(dim, dim, dim),
         spacing=(sp, sp, sp),
         origin=(-org, -org, -org),
