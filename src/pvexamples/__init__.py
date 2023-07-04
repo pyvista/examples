@@ -7,3 +7,4 @@ from . import planets
 from . import gltf
 from . import vrml
 from .cells import plot_cell
+from pvexamples._version import __version__
