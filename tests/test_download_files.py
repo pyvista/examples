@@ -19,7 +19,7 @@ from pyvista.core.errors import PyVistaDeprecationWarning
 if 'TEST_DOWNLOADS' in os.environ:
     warnings.warn('"TEST_DOWNLOADS" has been deprecated. Use `pytest --test_downloads`')
 
-pytestmark = pytest.mark.needs_download
+# pytestmark = pytest.mark.needs_download
 
 
 def test_download_single_sphere_animation():
