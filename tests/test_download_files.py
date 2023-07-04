@@ -795,13 +795,13 @@ def test_download_action_figure():
     assert isinstance(dataset, pv.PolyData)
 
 
-def test_download_mars_jpg():
-    filename = examples.download_mars_jpg()
+def test_download_mars_surface():
+    filename = examples.planets.download_mars_surface(load=False)
     assert os.path.isfile(filename)
 
 
-def test_download_stars_jpg():
-    filename = examples.download_stars_jpg()
+def test_download_stars_sky_background():
+    filename = examples.planets.download_stars_sky_background(load=False)
     assert os.path.isfile(filename)
 
 
