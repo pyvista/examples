@@ -4,3 +4,17 @@ dynamic = ['version']
 
 [tool.setuptools.dynamic]
 version = {attr = 'pvexamples._version.__version__'}
+
+[tool.setuptools.package-data]
+pvexamples = [
+    '2k_earth_daymap.jpg',
+    'airplane.ply',
+    'ant.ply',
+    'channels.vti',
+    'globe.vtk',
+    'hexbeam.vtk',
+    'nut.ply',
+    'rectilinear.vtk',
+    'sphere.ply',
+    'uniform.vtk',
+]
