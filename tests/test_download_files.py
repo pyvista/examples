@@ -13,7 +13,7 @@ import numpy as np
 import pytest
 
 import pyvista as pv
-from pyvista import examples
+import pvexamples as examples
 from pyvista.core.errors import PyVistaDeprecationWarning
 
 if 'TEST_DOWNLOADS' in os.environ:
