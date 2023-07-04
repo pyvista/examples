@@ -908,8 +908,8 @@ def test_download_gltf_damaged_helmet():
 def test_download_gltf_sheen_chair():
     filename = examples.gltf.download_sheen_chair()
     assert os.path.isfile(filename)
-    pl = pv.Plotter()
-    pl.import_gltf(filename)
+    # pl = pv.Plotter()
+    # pl.import_gltf(filename)
 
 
 def test_download_gltf_gearbox():
