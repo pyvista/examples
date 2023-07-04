@@ -353,7 +353,7 @@ def download_puppy(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -401,7 +401,7 @@ def download_st_helens(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -611,7 +611,7 @@ def download_head(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -647,7 +647,7 @@ def download_head_2(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -828,7 +828,7 @@ def download_knee(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -858,7 +858,7 @@ def download_knee_full(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1022,7 +1022,7 @@ def download_iron_protein(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1223,7 +1223,7 @@ def download_bird(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1349,7 +1349,7 @@ def download_cake_easy(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1426,7 +1426,7 @@ def download_gourds(zoom=False, load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1484,7 +1484,7 @@ def download_gourds_pnm(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1634,7 +1634,7 @@ def download_frog(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1668,7 +1668,7 @@ def download_chest(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1695,7 +1695,7 @@ def download_brain_atlas_with_sides(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1719,7 +1719,7 @@ def download_prostate(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1843,7 +1843,7 @@ def download_emoji(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -1920,7 +1920,7 @@ def download_brain(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2053,7 +2053,7 @@ def download_sky_box_nz(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2282,7 +2282,7 @@ def download_carotid(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2749,7 +2749,7 @@ def download_crater_topo(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2833,7 +2833,7 @@ def download_damavand_volcano(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2894,7 +2894,7 @@ def download_embryo(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -2991,7 +2991,7 @@ def download_beach(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -4361,7 +4361,7 @@ def download_cgns_multi(load=True):  # pragma: no cover
     return reader.read()
 
 
-def download_dicom_stack(load: bool = True) -> Union[pyvista.UniformGrid, str]:  # pragma: no cover
+def download_dicom_stack(load: bool = True) -> Union[pyvista.ImageData, str]:  # pragma: no cover
     """Download TCIA DICOM stack volume.
 
     Original download from the `The Cancer Imaging Archive (TCIA)
@@ -4377,7 +4377,7 @@ def download_dicom_stack(load: bool = True) -> Union[pyvista.UniformGrid, str]: 
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or path depending on ``load``.
 
     References
@@ -4483,7 +4483,7 @@ def download_moonlanding_image(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         ``DataSet`` or filename depending on ``load``.
 
     Examples
@@ -4609,7 +4609,7 @@ def download_gif_simple(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid | str
+    pyvista.ImageData | str
         DataSet or filename depending on ``load``.
 
     Examples
@@ -5397,7 +5397,7 @@ def download_coil_magnetic_field(load=True):  # pragma: no cover
 
     Returns
     -------
-    pyvista.UniformGrid or str
+    pyvista.ImageData or str
         DataSet or filename depending on ``load``.
 
     Examples
