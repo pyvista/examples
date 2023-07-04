@@ -1,3 +1,6 @@
 [project]
 name = "pyvista-examples"
 dynamic = ['version']
+
+[tool.setuptools.dynamic]
+version = {attr = 'pvexamples._version.__version__'}
