@@ -21,7 +21,7 @@ def plot_cell(grid, cpos=None, **kwargs):
     --------
     Create and plot a single hexahedron.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Hexahedron()
     >>> examples.plot_cell(grid)
 
@@ -64,7 +64,7 @@ def Empty() -> UnstructuredGrid:
     --------
     Create a single empty cell.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Empty()
 
     List the grid's cells.
@@ -98,7 +98,7 @@ def Vertex() -> UnstructuredGrid:
     --------
     Create and plot a single vertex.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Vertex()
     >>> examples.plot_cell(grid)
 
@@ -137,7 +137,7 @@ def PolyVertex() -> UnstructuredGrid:
     --------
     Create and plot a single poly vertex.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.PolyVertex()
     >>> examples.plot_cell(grid)
 
@@ -179,7 +179,7 @@ def Line() -> UnstructuredGrid:
     --------
     Create and plot a single line.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Line()
     >>> examples.plot_cell(grid)
 
@@ -219,7 +219,7 @@ def PolyLine() -> UnstructuredGrid:
     --------
     Create and plot a single polyline.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.PolyLine()
     >>> examples.plot_cell(grid)
 
@@ -265,7 +265,7 @@ def Triangle() -> UnstructuredGrid:
     --------
     Create and plot a single triangle.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Triangle()
     >>> examples.plot_cell(grid, cpos='xy')
 
@@ -304,7 +304,7 @@ def TriangleStrip() -> UnstructuredGrid:
     --------
     Create and plot a single triangle strip.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.TriangleStrip()
     >>> examples.plot_cell(grid, cpos='xy')
 
@@ -357,7 +357,7 @@ def Polygon() -> UnstructuredGrid:
     --------
     Create and plot a single polygon.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Polygon()
     >>> examples.plot_cell(grid)
 
@@ -399,7 +399,7 @@ def Pixel() -> UnstructuredGrid:
     --------
     Create and plot a single pixel.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Pixel()
     >>> examples.plot_cell(grid, cpos='xy')
 
@@ -439,7 +439,7 @@ def Quadrilateral() -> UnstructuredGrid:
     --------
     Create and plot a single quad.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Quadrilateral()
     >>> examples.plot_cell(grid, cpos='xy')
 
@@ -479,7 +479,7 @@ def Tetrahedron() -> UnstructuredGrid:
     --------
     Create and plot a single tetrahedron.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Tetrahedron()
     >>> examples.plot_cell(grid)
 
@@ -524,7 +524,7 @@ def Hexahedron() -> UnstructuredGrid:
     --------
     Create and plot a single hexahedron.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Hexahedron()
     >>> examples.plot_cell(grid)
 
@@ -577,7 +577,7 @@ def HexagonalPrism() -> UnstructuredGrid:
     --------
     Create and plot a single hexagonal prism.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.HexagonalPrism()
     >>> examples.plot_cell(grid)
 
@@ -638,7 +638,7 @@ def Wedge() -> UnstructuredGrid:
     --------
     Create and plot a single wedge.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Wedge()
     >>> examples.plot_cell(grid)
 
@@ -680,7 +680,7 @@ def PentagonalPrism() -> UnstructuredGrid:
     --------
     Create and plot a single pentagonal prism.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.PentagonalPrism()
     >>> examples.plot_cell(grid)
 
@@ -737,7 +737,7 @@ def Pyramid() -> UnstructuredGrid:
     --------
     Create and plot a single pyramid.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Pyramid()
     >>> examples.plot_cell(grid)
 
@@ -784,7 +784,7 @@ def Voxel() -> UnstructuredGrid:
     --------
     Create and plot a single voxel.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> grid = examples.cells.Voxel()
     >>> examples.plot_cell(grid)
 
