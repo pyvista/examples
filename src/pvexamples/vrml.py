@@ -14,7 +14,7 @@ def download_teapot():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> import pvexamples as examples
+    >>> from pyvista import examples
     >>> vrml_file = examples.vrml.download_teapot()
     >>> pl = pyvista.Plotter()
     >>> pl.import_vrml(vrml_file)
@@ -35,7 +35,7 @@ def download_sextant():  # pragma: no cover
     Examples
     --------
     >>> import pyvista
-    >>> import pvexamples as examples
+    >>> from pyvista import examples
     >>> vrml_file = examples.vrml.download_sextant()
     >>> pl = pyvista.Plotter()
     >>> pl.import_vrml(vrml_file)
