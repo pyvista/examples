@@ -3,7 +3,7 @@
 import numpy as np
 
 import pyvista
-from pyvista import examples
+import pvexamples as examples
 
 from .downloads import _download_and_read
 
@@ -63,7 +63,7 @@ def load_sun(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no c
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_sun()
     >>> texture = examples.planets.download_sun_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -105,7 +105,7 @@ def load_moon(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no 
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_moon()
     >>> texture = examples.planets.download_moon_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -147,7 +147,7 @@ def load_mercury(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: 
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_mercury()
     >>> texture = examples.planets.download_mercury_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -189,7 +189,7 @@ def load_venus(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_venus()
     >>> texture = examples.planets.download_venus_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -233,7 +233,7 @@ def load_earth(radius=1.0, lat_resolution=50, lon_resolution=100):
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_earth()
     >>> texture = examples.load_globe_texture()
     >>> pl = pv.Plotter()
@@ -274,7 +274,7 @@ def load_mars(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no 
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_mars()
     >>> texture = examples.planets.download_mars_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -316,7 +316,7 @@ def load_jupiter(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: 
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_jupiter()
     >>> texture = examples.planets.download_jupiter_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -358,7 +358,7 @@ def load_saturn(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: n
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_saturn()
     >>> texture = examples.planets.download_saturn_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -402,7 +402,7 @@ def load_saturn_rings(inner=0.25, outer=0.5, c_res=6):  # pragma: no cover
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_saturn_rings()
     >>> texture = examples.planets.download_saturn_rings(texture=True)
     >>> pl = pv.Plotter()
@@ -446,7 +446,7 @@ def load_uranus(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: n
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_uranus()
     >>> texture = examples.planets.download_uranus_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -488,7 +488,7 @@ def load_neptune(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: 
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_neptune()
     >>> texture = examples.planets.download_neptune_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -530,7 +530,7 @@ def load_pluto(radius=1.0, lat_resolution=50, lon_resolution=100):  # pragma: no
     Examples
     --------
     >>> import pyvista as pv
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> mesh = examples.planets.load_pluto()
     >>> texture = examples.planets.download_pluto_surface(texture=True)
     >>> pl = pv.Plotter()
@@ -572,7 +572,7 @@ def download_sun_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_sun_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -602,7 +602,7 @@ def download_moon_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_moon_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -632,7 +632,7 @@ def download_mercury_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_mercury_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -665,7 +665,7 @@ def download_venus_surface(atmosphere=True, texture=False, load=True):  # pragma
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_venus_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -698,7 +698,7 @@ def download_mars_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_mars_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -728,7 +728,7 @@ def download_jupiter_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_jupiter_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -758,7 +758,7 @@ def download_saturn_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_saturn_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -787,7 +787,7 @@ def download_saturn_rings(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_saturn_rings(texture=True)
     >>> texture.plot(cpos='xy')
 
@@ -817,7 +817,7 @@ def download_uranus_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_uranus_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -847,7 +847,7 @@ def download_neptune_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_neptune_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -877,7 +877,7 @@ def download_pluto_surface(texture=False, load=True):  # pragma: no cover
 
     Examples
     --------
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> texture = examples.planets.download_pluto_surface(texture=True)
     >>> texture.plot(zoom='tight', show_axes=False)
 
@@ -909,7 +909,7 @@ def download_stars_sky_background(texture=False, load=True):  # pragma: no cover
     --------
     Load the night sky image as a background image.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista as pv
     >>> pl = pv.Plotter()
     >>> image_path = examples.planets.download_stars_sky_background(
@@ -948,10 +948,10 @@ def download_milkyway_sky_background(texture=False, load=True):  # pragma: no co
     --------
     Load the Milky Way sky image as a background image.
 
-    >>> from pyvista import examples
+    >>> import pvexamples as examples
     >>> import pyvista as pv
     >>> pl = pv.Plotter()
-    >>> image_path = examples.planets.download_milkyway_sky_background(
+    >>> image_path = planets.download_milkyway_sky_background(
     ...     load=False
     ... )
     >>> pl.add_background_image(image_path)
